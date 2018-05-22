@@ -1,5 +1,5 @@
 <section class="hero-content">
-  <h1 class="hero-title">Tasks</h1>
+  <h1 class="hero-title">Archive</h1>
 </section>
 
 <section class="new-task">
@@ -15,11 +15,11 @@
 </section>
 
 <section class="task-content">
-  <div class="task-list" ng-repeat="task in home.tasks">
-    <div ng-hide="home.hide(task)">
+  <div class="task-list" ng-repeat="task in archive.tasks">
+    <div ng-hide="archive.show(task)">
       <div>
         <input class="task-checkbox" type="checkbox">
-        <h3 class="task-title">{{ task.title }}</h3>
+        <h3 class="archive-title">{{ task.title }}</h3>
       </div>
       <p class="task-priority">Priority: {{ task.priority }} | Created: {{ task.created }}</p>
     </div>

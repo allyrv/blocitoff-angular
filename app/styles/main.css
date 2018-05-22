@@ -1,0 +1,57 @@
+*, *::before, *::after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 100%;
+}
+
+body {
+  text-align: center!important;
+  background-color: #FFFFFF;
+}
+
+.hero-content {
+  width: 500px;
+  background-color: #f3f3f3;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.hero-title {
+  padding: 1rem;
+}
+
+.new-task {
+  position: relative;
+  background-color: #f3f3f3;
+  padding: 2rem;
+  margin: auto;
+  width: 500px;
+}
+
+.task-content {
+  position: relative;
+  background-color: #f3f3f3;
+  margin: auto;
+  height: 100%;
+  width: 500px;
+  margin-top: -20px;
+}
+
+.task-list {
+  border-top: 1px solid #ccc;
+  padding-top: 5px;
+}
+
+.archive-title {
+ text-decoration: line-through;
+}
+
+.priority {
+  margin: 0 1rem 0 0;
+  height: 1.75rem;
+}

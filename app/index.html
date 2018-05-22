@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html ng-app="blocitoffAngular">
+<html ng-app="blocitoff">
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Bloc Base Project</title>
+    <title>Blocitoff</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/styles/main.css">
+
 </head>
 <body>
+<nav class="nav-bar">
+    <a ui-sref="home">Tasks</a> | <a ui-sref="archive">Archive</a>
+</nav>
 	<ui-view></ui-view>
+	<script src='https://momentjs.com/downloads/moment.min.js'></script>
 
     <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
@@ -20,6 +26,9 @@
     
     <!-- AngularFire -->
     <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+
+    <!-- AngularUI Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
 
     <script>
     	// Initialize Firebase
@@ -36,5 +45,8 @@
 
     <!-- Application Files -->
     <script src="/scripts/app.js"></script>
+    <script src="/scripts/controllers/HomeCtrl.js"></script>
+    <script src="/scripts/controllers/ArchiveCtrl.js"></script>
+    <script src="/scripts/services/Task.js"></script>
 </body>
 </html>

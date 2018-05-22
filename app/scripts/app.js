@@ -11,10 +11,16 @@
         url: '/',
         controller: 'HomeCtrl as home',
         templateUrl: '/templates/home.html'
-    });
+    })
+
+      .state('archive', {
+        url: '/archive',
+        controller: 'ArchiveCtrl as archive',
+        templateUrl: '/templates/archive.html'
+        });
   }
 
   angular
-    .module('blocitoffAngular', ['ui.router', 'firebase'])
+    .module('blocitoff', ['ui.router', 'firebase'])
     .config(config);
 })();
