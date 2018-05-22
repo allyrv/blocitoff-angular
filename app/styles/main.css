@@ -43,7 +43,6 @@ body {
 }
 
 .task-list {
-  border-top: 1px solid #ccc;
   padding-top: 5px;
 }
 
@@ -54,4 +53,8 @@ body {
 .priority {
   margin: 0 1rem 0 0;
   height: 1.75rem;
+}
+
+h3.task-title.ng-binding {
+  display:inline;
 }

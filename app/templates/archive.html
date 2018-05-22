@@ -10,18 +10,18 @@
       <option value="Medium">Medium</option>
       <option value="Low" >Low</option>
     </select>
-    <button class="submit" ng-click="home.addTask(messageTitle, taskPriority); clearfunction(this)">Add Task</button>
+    <button class="submit" ng-click="archive.addTask(messageTitle, taskPriority); clearfunction(this)">Add Task</button>
   </div>
 </section>
 
 <section class="task-content">
-  <div class="task-list" ng-repeat="task in archive.tasks">
+  <div class="task-list" ng-repeat="task in archive.tasks | orderBy:'priority'">
     <div ng-hide="archive.show(task)">
       <div>
-        <input class="task-checkbox" type="checkbox">
-        <h3 class="archive-title">{{ task.title }}</h3>
+        <input class="task-checkbox" type="checkbox" ng-click="archive.taskStatus(task)"> <h3 class="archive-title">{{ task.title }}</h3>
       </div>
       <p class="task-priority">Priority: {{ task.priority }} | Created: {{ task.created }}</p>
+      <hr>
     </div>
   </div>
 </section>

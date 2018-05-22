@@ -17,8 +17,8 @@
         url: '/archive',
         controller: 'ArchiveCtrl as archive',
         templateUrl: '/templates/archive.html'
-        });
-  }
+      });
+    }
 
   angular
     .module('blocitoff', ['ui.router', 'firebase'])

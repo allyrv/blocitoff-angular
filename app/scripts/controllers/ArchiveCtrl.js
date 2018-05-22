@@ -6,7 +6,7 @@
     };
 
     this.show = function(task) {
-     return task.created > (moment().dayOfYear() - 7) && task.completed == false
+      return task.created > (moment().dayOfYear() - 7) && task.completed == false
     };
 
     this.addTask = function(messageTitle, taskPriority) {
@@ -21,7 +21,7 @@
       }
       $scope.clearfunction = function(event){
         event.messageTitle = null;
-        event.taskPriority = "3";
+        event.taskPriority = "Low";
       }
     }
 

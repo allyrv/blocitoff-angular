@@ -18,10 +18,10 @@
   <div class="task-list" ng-repeat="task in home.tasks">
     <div ng-hide="home.hide(task)">
       <div>
-        <input class="task-checkbox" type="checkbox">
-        <h3 class="task-title">{{ task.title }}</h3>
+        <input class="task-checkbox" type="checkbox" ng-click="home.taskStatus(task)"> <h3 class="task-title">{{ task.title }}</h3>
       </div>
       <p class="task-priority">Priority: {{ task.priority }} | Created: {{ task.created }}</p>
+      <hr>
     </div>
   </div>
 </section>
